@@ -5,5 +5,8 @@ a = st.number_input('Tham số a')
 b = st.number_input('Tham số b')
 
 if st.button('Giải'):
-  st.write('Phương trình có 1 nghiệm ' + str(-b/a))
+  if a==0:
+    st.write('Phương trình có vô số nghiệm')
+  else:
+    st.write('Phương trình có 1 nghiệm ' + str(-b/a))
  
